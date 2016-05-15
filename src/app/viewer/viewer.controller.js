@@ -5,7 +5,17 @@
     .module('app.viewer')
     .controller('ViewerController', ViewerController);
 
-    function ViewerController() {
+    ViewerController.$inject = ['wikipediaFactory'];
+
+    function ViewerController(wikipediaFactory) {
       var vm = this;
+      search('Java');
+
+      function search(description) {
+        wikipediaFactory.getData(description)
+          .success(function(data) {
+            console.log(data);
+          });
+      }
     }
 })();
