@@ -2,18 +2,18 @@
   'use strict';
 
   angular
-    .module('app', [
-      'ngRoute',
-      'app.viewer'
-    ])
+    .module('app.viewer')
     .config(configFunction);
 
   configFunction.$inject = ['$routeProvider'];
 
   function configFunction($routeProvider) {
+
     $routeProvider
-      .otherwise({
-        redirectTo: '/viewer'
+      .when('/viewer', {
+        templateUrl: 'app/viewer/viewer.html',
+        controller: 'ViewerController',
+        controllerAs: 'vm'
       });
   }
 })();
