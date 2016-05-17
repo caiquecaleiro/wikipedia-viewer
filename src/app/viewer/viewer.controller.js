@@ -9,13 +9,18 @@
 
     function ViewerController(wikipediaFactory) {
       var vm = this;
-      search('Java');
+      vm.search = search;
+      vm.description = '';
+      vm.pages = [];
 
+      /**
+       * Search for the Wikipedia pages based on the description.
+       * @param {string} description - The description written by the user.
+       */
       function search(description) {
-        wikipediaFactory.getData(description)
-          .success(function(data) {
-            console.log(data);
-          });
+        wikipediaFactory.getPages(description).then(function(data) {
+          vm.pages = data;
+        });
       }
     }
 })();

@@ -1,6 +1,6 @@
-<form>
+<form ng-submit="vm.search(vm.description)">
   <div class="form-group">
-    <input class="form-control" type="text" placeholder="Text search" required>
+    <input ng-model="vm.description" class="form-control" type="text" placeholder="Text search" required>
   </div>
   <div>
     <button type="submit" class="btn btn-primary">Search</button>
