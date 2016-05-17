@@ -5,9 +5,9 @@
     .module('app.viewer')
     .factory('wikipediaFactory', wikipediaFactory);
 
-  wikipediaFactory.$inject = ['$http', '$q'];
+  wikipediaFactory.$inject = ['$http', '$q', 'wikipediaUrl'];
 
-  function wikipediaFactory($http, $q) {
+  function wikipediaFactory($http, $q, wikipediaUrl) {
     var service = {
       getPages: getPages
     };
@@ -60,7 +60,7 @@
         pages.push(new Page(
           value.title,
           value.extract,
-          value.pageid
+          wikipediaUrl.WIKI_PAGE + value.pageid
         ));
       });
       return pages;
@@ -71,12 +71,12 @@
      * @constructor
      * @param {string} title - The title of the page.
      * @param {string} extract - A limited text about the page.
-     * @param {number} pageId - The page id.
+     * @param {string} pageUrl - The page URL.
      */
-    function Page(title, extract, pageId) {
+    function Page(title, extract, pageUrl) {
       this.title = title;
       this.extract = extract;
-      this.pageId = pageId;
+      this.pageUrl = pageUrl;
     }
   }
 })();
