@@ -71,12 +71,12 @@
      * @constructor
      * @param {string} title - The title of the page.
      * @param {string} extract - A limited text about the page.
-     * @param {string} pageUrl - The page URL.
+     * @param {string} url - The page URL.
      */
-    function Page(title, extract, pageUrl) {
+    function Page(title, extract, url) {
       this.title = title;
       this.extract = extract;
-      this.pageUrl = pageUrl;
+      this.url = url;
     }
   }
 })();

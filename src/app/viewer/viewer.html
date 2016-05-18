@@ -9,3 +9,9 @@
     <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
   </div>
 </form>
+<div class="list-group">
+  <a href="{{ page.url }}" target="_blank" class="list-group-item" ng-repeat="page in vm.pages">
+    <h4 class="list-group-item-heading">{{ page.title }}</h4>
+    <p class="list-group-item-text">{{ page.extract }}</p>
+  </a>
+</div>
