@@ -1,14 +1,10 @@
-<form ng-submit="vm.search(vm.description)">
-  <div class="form-group">
-    <input ng-model="vm.description" class="form-control" type="text" placeholder="Text search" required>
-  </div>
-  <div>
-    <button type="submit" class="btn btn-primary">Search</button>
-  <div>
-  <div>
-    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
-  </div>
-</form>
+<div>
+  <input ng-change="vm.search(vm.description)" ng-model="vm.description" ng-model-options="{ debounce: 300 }" class="form-control" type="text" placeholder="Text search">
+  <p ng-show="vm.error" class="text-danger" ng-bind="vm.error"></p>
+</div>
+<div>
+  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
+</div>
 <div class="list-group">
   <a href="{{ page.url }}" target="_blank" class="list-group-item" ng-repeat="page in vm.pages">
     <h4 class="list-group-item-heading">{{ page.title }}</h4>

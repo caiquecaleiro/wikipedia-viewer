@@ -23,9 +23,13 @@
       var deferred = $q.defer();
       getData(description).then(
         function success(result) {
-          var pagesData = result.data.query.pages;
-          var pages = buildPages(pagesData);
-          deferred.resolve(pages);
+          var pagesData = result.data.query;
+          if (pagesData) {
+            var pages = buildPages(pagesData.pages);
+            deferred.resolve(pages);
+          } else {
+            deferred.resolve();
+          }
         },
         function error(error) {
           deferred.reject(error);
