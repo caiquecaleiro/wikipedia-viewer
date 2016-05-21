@@ -1,0 +1,9 @@
+<div>
+  <p class="s">
+    <input ng-change="vm.search(vm.description)" ng-model="vm.description" ng-model-options="{ debounce: 300 }" name="search" id="search" type="search">
+  </p>
+  <p ng-show="vm.error" class="text-danger" ng-bind="vm.error"></p>
+</div>
+<div>
+  <a style="color: white" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
+</div>
