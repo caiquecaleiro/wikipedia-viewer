@@ -16,6 +16,9 @@ The app uses these technologies:
 ## API
 This app uses the [Wikipedia's API](https://www.mediawiki.org/wiki/API:Main_page) to search for the articles.
 
+## CodePen
+You can check this app on [CodePen](http://codepen.io/caiquecaleiro/full/oxrRwx/).
+
 ## Style and structure
 
 This app follows [John Papa's AngularJS style guide](https://github.com/johnpapa/angular-styleguide),
