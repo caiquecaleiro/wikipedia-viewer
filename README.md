@@ -13,6 +13,9 @@ The app uses these technologies:
 * AngularJS 1.5
 * Bootstrap 3.3
 
+## API
+This app uses the [Wikipedia's API](https://www.mediawiki.org/wiki/API:Main_page) to search for the articles.
+
 ## Style and structure
 
 This app follows [John Papa's AngularJS style guide](https://github.com/johnpapa/angular-styleguide),
