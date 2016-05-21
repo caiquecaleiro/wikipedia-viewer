@@ -1,9 +1,14 @@
 <div>
-  <input ng-change="vm.search(vm.description)" ng-model="vm.description" ng-model-options="{ debounce: 300 }" class="form-control" type="text" placeholder="Text search">
+  <h1>Wikipedia Viewer</h1>
+</div>
+<div>
+  <p class="s">
+    <input ng-change="vm.search(vm.description)" ng-model="vm.description" ng-model-options="{ debounce: 300 }" name="search" id="search" type="search">
+  </p>
   <p ng-show="vm.error" class="text-danger" ng-bind="vm.error"></p>
 </div>
 <div>
-  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
+  <a style="color: white" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a>
 </div>
 <div class="list-group">
   <a href="{{ page.url }}" target="_blank" class="list-group-item" ng-repeat="page in vm.pages">
