@@ -6,7 +6,7 @@ The user can search Wikipedia entries in a search box and see the resulting Wiki
 search for a random article on Wikipedia.         
 
 
-![Wikipedia Viewer](img/gitHub/wikipedia-viewer)
+![Wikipedia Viewer](https://raw.githubusercontent.com/caiquecaleiro/wikipedia-viewer/dev/src/img/gitHub/wikipedia-viewer.png)
 
 The app uses these technologies:
 
