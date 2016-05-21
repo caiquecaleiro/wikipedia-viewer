@@ -5,6 +5,9 @@ project that was required by FCC.
 The user can search Wikipedia entries in a search box and see the resulting Wikipedia entries. Also, there is a random link, which will
 search for a random article on Wikipedia.         
 
+
+![Wikipedia Viewer](img/gitHub/wikipedia-viewer)
+
 The app uses these technologies:
 
 * AngularJS 1.5
