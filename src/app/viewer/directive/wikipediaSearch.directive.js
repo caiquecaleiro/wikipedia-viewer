@@ -15,7 +15,7 @@
         scope: {
           pages: '='
         }
-      }
+      };
     }
 
     SearchController.$inject = ['wikipediaFactory', 'errors'];
