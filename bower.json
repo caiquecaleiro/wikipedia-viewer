@@ -1,0 +1,22 @@
+{
+  "name": "wikipedia-viewer",
+  "description": "This is the [Build a Wikipedia Viewer](https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer) project that was required by FCC.",
+  "main": "app.module.js",
+  "authors": [
+    "Caique Caleiro <caiquecaleiro@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/caiquecaleiro/wikipedia-viewer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
